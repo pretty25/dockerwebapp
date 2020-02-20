@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'sat-dockerhub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'sat-docker') {
 
         def customImage = docker.build("sonuthestar/dockerwebapp")
 
